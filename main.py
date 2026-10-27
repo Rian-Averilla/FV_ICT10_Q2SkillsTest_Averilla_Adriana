@@ -1,9 +1,8 @@
 from pyscript import document,display
 
-def checkdeets():
 
 #All Nonmetals Variable
-    Nonmetals = {
+Nonmetals = {
         "H": ("Hydrogen", 1, 1.0078),
         "He": ("Helium", 2, 4.0026),
         "C": ("Carbon", 6, 12.011),
@@ -25,6 +24,7 @@ def checkdeets():
         "Og": ("Oganesson", 118, 294.000)
         }
 
+def checkdeets():
     Element1 = document.getElementById("Elemsymbol")
     symbol = Element1.value.strip().capitalize()
     element_display = Nonmetals.get(symbol, ("Element not found", "-", "-"))
