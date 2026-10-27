@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <title>Skills Test</title>
+    <style>
+        body{background-color: rgb(191, 255, 225);
+             Text-align: center;
+            }
+
+        h1{color: rgb(1, 94, 43);}
+
+        #output1{
+                border: 5px solid rgb(8, 124, 89);
+                height: 400px;
+                width: 800px;
+                border-radius: 10px;
+                font-size: 20px;
+                margin: 0 auto;
+                }
+    </style>
+
+</head>
+<body>
+    <div class="container" id="output1">
+
+<!--HEADING-->
+    <h1>Nonmetal Elements</h1>
+    <p>Periodic Table Information Finder</p>
+
+        <br>
+
+<!--INPUT BOX-->
+        <label for="Elemsymbol">Element Symbol:</label>
+        <br>
+        <input type="text" id="Elemsymbol" placeholder="Enter element symbol">
+
+        <br><br>
+
+<!--BUTTON-->
+        <button id="checkdeets" py-click="checkdeets()">Check Details</button>
+    
+    </div>
+    <script type="py" src="main.py"></script>
+</body>
+</html>
